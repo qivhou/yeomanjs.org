@@ -1,0 +1,81 @@
+---
+layout: default
+---
+<article>
+  <header>
+    <div class="strikethrough strikethrough-image">
+      <h1><img src="assets/img/yeoman-header.png" alt="Yeoman"></h1>
+    </div>
+  </header>
+  <section>
+
+{% capture homepage %}
+{% include yeoman.wiki/wiki-cn/Homepage.md %}
+{% endcapture %}
+{{ homepage | markdownify }}
+
+
+    <h2 class="hero-title">我的特性</h2>
+    <div class="row features">
+      <ul class="span5">
+        <li>
+          <i class="icon-star"></i> <strong>快如闪电的搭建脚手架</strong> — 通过自定义的模板(比如 HTML5 Boilerplate，BootStrap), RequireJS等等其他资源很容易搭建一个新项目的脚手架。<p></p>
+        </li>
+        <li>
+          <i class="icon-tasks"></i> <strong>非常棒的构建过程</strong> — 你不只得到了最小化和连接功能；同时我还优化了所有你的图片文件和HTML，编译了你的CoffeeScript和Compass文件，如果你在使用AMD，我将把那些模块传给r.js处理，所以你不必再亲自做这件事。<p></p>
+        </li>
+        <li>
+          <i class="icon-refresh"></i> <strong>自动编译CoffeeScript和Compass</strong> — 只要有改动发生，我们的LiveReload监视进程会自动编译源文件并刷新你的浏览器，这些你都不必亲自去做了。<p></p>
+        </li>
+        <li>
+          <i class="icon-cog"></i> <strong>自动对脚本进行lint检查</strong> — 在所有脚本将会自动运行JSHint来确保它们符合语言的最佳实践。<p></p>
+        </li>
+        <li>
+          <i class="icon-upload"></i> <strong>内置预览Server</strong> — 不再需要启动你自己的HTTP Server。我的内置的HTTP Server仅使用一个命令就可以启动。<p></p>
+        </li>
+        <li>
+          <i class="icon-picture"></i> <strong>超赞的图片优化</strong> — 我使用OptiPNG和JPEGTran优化你所有的图片，这样一来你的用户就可以花更少的时候来下载资源用更多的时间享受你的应用。<p></p>
+        </li>
+        <li>
+          <i class="icon-inbox"></i> <strong>招人喜爱的包管理</strong> — 需要一个依赖？这只是敲打几下按键就可以完成。我允许你可以轻易的通过命令行来查找新的包 (例如 `bower search jquery`)，不需要打开你的浏览器就可以安装它们并且保持它们更新到最新版本。<p></p>
+        </li>
+        <li>
+          <i class="icon-ok"></i> <strong>PhantomJS 单元测试</strong> — 通过PhantomJS可以很容易的在无界面的WebKit浏览器引擎中运行你的单元测试用例。当你创建一个新应用的时候，我也会为你的应用包含一些测试脚手架。<p></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <hr>
+    <section>
+      <h2 class="hero-title">教程：用Yeoman构建一个web应用</h2>
+      <div class="row tutorial">
+        <p>在这个教程中，我们将用Yeoman工作流创建，构建并且发布一个完整的应用。</p>
+    <div class="video-container">
+      <iframe width="640" height="360" src="//www.youtube.com/embed/iUQ1fvdO9GY" frameborder="0" allowfullscreen class="yt"></iframe>
+    </div>
+    </div>
+    </section>
+  <hr>
+  <section>
+    <ul class='quick-links'>
+      <li class="google-follow">
+        Follow +Yeoman on
+        <a href="https://plus.google.com/101063139999404044459?prsrc=3" rel="publisher" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:20px;height:20px;"/></a>
+      </li>
+      <li style="width: 120px; height: 25px;">
+        <g:plusone size="medium" annotation="inline" width="120" href="http://yeoman.io"></g:plusone>
+      </li>
+      <li style="width: 220px; height: 25px;">
+        <a href="https://twitter.com/yeoman" class="twitter-follow-button" data-show-count="true">Follow @yeoman</a>
+      </li>
+      <li style="width: 107px; height: 25px;">
+        <a href="https://twitter.com/share" class="twitter-share-button"
+           data-url="http://yeoman.io" data-text="Yeoman - Modern Workflows For Modern Web Apps">Tweet</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2>关于</h2>
+    <p class="credits">Yeoman项目由 <a href="https://github.com/paulirish">Paul Irish</a>, <a href="https://github.com/addyosmani">Addy Osmani</a>, <a href="https://github.com/sindresorhus">Sindre Sorhus</a>, <a href="https://github.com/mklabs">Mickael Daniel</a>, <a href="https://github.com/ebidel">Eric Bidelman</a>, <a href="https://github.com/sleeper">Frederick Ros</a>, <a href="https://github.com/btford">Brian Ford</a>, <a href="https://github.com/passy">Pascal Hartig</a>, <a href="https://github.com/stephenplusplus">Stephen Sawchuk</a> 还有 <a href="https://github.com/yeoman/yeoman">Yeoman 社区</a>开发。</p>
+  </section>
+</article>
