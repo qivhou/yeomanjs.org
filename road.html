@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Yeoman - 为现代web应用而生的现代工作流</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Yeoman中文社区是由爱好者发起的Yeoman中文交流社区，关注web应用工作流工具Yeoman的应用推广。">
+  <meta name="keywords" content="yeoman, yeoman.js, web前端, workflow, 工作流, JavaScript, Node.js, Node, Bower, Grunt">
+  <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Lekton|Ubuntu+Mono:400,700" rel="stylesheet">
+  <link href="assets/css/normalize.css" rel="stylesheet">
+  <link href="assets/css/yeoman.css" rel="stylesheet">
+  <link href="assets/css/prettify.css" rel="stylesheet">
+  <link href="assets/css/forkit.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="assets/js/libs/prettify.js"></script>
+  <script src="assets/js/libs/jquery.timeago.js"></script>
+  <script src="assets/js/libs/list.js"></script>
+  <script src="assets/js/libs/lodash.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</head>
+
+<body class="">
+    <nav>
+    <header><a href="/index.html"><img src="http://yeoman.io/assets/img/yeoman-logo.png"></a></header>
+    <ul>
+      <li class="nav-divider"><a href="/index.html"><img src="http://yeoman.io/assets/img/icon-home.png">主页</a></li>
+      <li class="nav-divider"><a href="/whyyeoman.html"><img src="http://yeoman.io/assets/img/icon-why-yeoman.png">为什么选择Yeoman?</a></li>
+      <li><a href="/gettingstarted.html"><img src="http://yeoman.io/assets/img/icon-getting-started.png">新手上路(1.0)</a></li>
+      <li class="nav-sub"><a href="/about.html">关于Yeoman</a></li>
+      <li class="nav-sub"><a href="/roadmap.html">路线图</a></li>
+      <li class="nav-sub"><a href="/deployment.html">部署</a></li>
+      <li class="nav-sub"><a href="/support.html">支持</a></li>
+      <li class="nav-divider nav-sub"><a href="/packagemanager.html">包管理器</a></li>
+      <li><a href="/generators.html">生成器</a></li>
+      <li class="nav-sub"><a href="/community-generators.html">社区贡献的生成器</a></li>
+      <li class="nav-sub"><a href="/generators.html#writing-your-first-generator">编写你自己的生成器</a></li>
+      <li class="nav-sub"><a href="/generators.html#get-help">得到帮助</a></li>
+      <li class="nav-sub"><a href="/generators.html#reference-materials">参考资料</a></li>
+      <li class="nav-sub"><a href="/generators.html#snippets">代码片段</a></li>
+      <li class="nav-divider nav-sub"><a href="/generators.html#frequently-asked-questions">FAQ</a></li>
+      <li><a href="https://github.com/yeoman/yeoman/wiki"><img src="http://yeoman.io/assets/img/icon-documentation.png">文档</a></li>
+      <li class="nav-sub"><a href="/road.html">通向1.0版本之路</a></li>
+      <li class="nav-sub nav-divider"><a href="/migrate.html">从0.9版本迁移</a></li>
+      <li><a href="/index.html">Yeoman中文社区</a></li>
+      <li class="nav-sub"><a href="https://github.com/qivhou/yeoman-cn/issues">翻译问题</a></li>
+      <li class="nav-sub"><a href="https://github.com/qivhou/yeoman-cn/">参与中文社区翻译</a></li>
+      <li class="nav-sub nav-divider"><a href="https://github.com/qivhou/yeomanjs.org/">参与中文社区网站建设</a></li>
+      <li><a href="/faq.html"><img src="http://yeoman.io/assets/img/icon-faqs.png">FAQ</a></li>
+      <li class"nav-divider"><a href="https://plus.google.com/101063139999404044459/posts"><img src="http://yeoman.io/assets/img/icon-google-plus.png">Google+</a></li>
+      <li class="nav-divider"><a href="http://twitter.com/yeoman"><img src="http://yeoman.io/assets/img/icon-twitter.png">Twitter</a></li>
+      <li><a href="http://github.com/yeoman/yeoman"><img src="http://yeoman.io/assets/img/icon-github.png">GitHub</a></li>
+      <li><a href="https://github.com/yeoman/yeoman/blob/master/contributing.md"><img src="http://yeoman.io/assets/img/icon-contributing.png">参与贡献</a></li>
+    </ul>
+  </nav>
+
+  <div id="content">
+    <article>
+      
+        <h1>通向1.0版本之路</h1>
+
+<p>我们最初发布的Yeoman试图成为万金油。在这个过程中我们得到了很多教训，包括在我们使用的工具上给出明确信息的重要性和我们的流程可以如何被定制。我们牢记以下这些致力于在1.0版本让使用Yeoman变得更简单：</p>
+
+<h2>Yeoman 0.9版本之痛</h2>
+
+<ul>
+<li>与Grunt混淆在一起，没有清楚的迁移方法</li>
+<li>对于已存在的项目灵活性不够</li>
+<li>Grunt任务，Yeoman任务 - 并不完全清楚它们之间的却别是什么</li>
+<li>为了安装所有依赖需要花费10到20分钟</li>
+<li>在某些领域有点太自以为是，对于如何自定义并不清楚</li>
+<li>包管理只是偶尔才好用</li>
+</ul>
+
+<h2>消除误解</h2>
+
+<ul>
+<li>并不是要替代Grunt，而是要和Grunt并肩战斗</li>
+<li>是一个带着脚手架的自用Grunt任务集合</li>
+<li>只被单独为工作流程使用，Grunt才是构建的过程</li>
+<li>不是一个只能在Mac或者Unix上工作的工具，Windows的支持即将到来</li>
+<li>不推荐用它构建网站</li>
+<li>不应该被用作一个替代万物的一揽子解决方案</li>
+<li>并非旨在取代所有完善的后端工具</li>
+<li>旨在为构建复杂的有后端或者第三方API的web应用服务</li>
+</ul>
+
+<h2>Yeoman 1.0版本的高阶目标</h2>
+
+<ul>
+<li>与Grunt和谐共存</li>
+<li>更好的安装体验</li>
+<li>一切都有更好的可配置性</li>
+<li>生成器更灵活</li>
+<li>改进包管理器</li>
+<li>更高的稳定性</li>
+<li>在一些领域更少的独断性</li>
+<li>更容易与已经存在的项目合作</li>
+</ul>
+
+<h2>安装</h2>
+
+<ul>
+<li>安装时间大幅减少</li>
+<li>要求更少的依赖</li>
+<li>按需安装 (TM)</li>
+<li>缓慢的Python已经不再需要了</li>
+<li>Ruby只有在用户需要Compass支持的时候才需要</li>
+<li>图片压缩工具(OptiPNG, JPEGTran)不再被默认从npm自动获取安装</li>
+<li>PhantomJS也是这样</li>
+<li>更新器，它原本是启动时导致速度极慢的主要原因，也被移除了</li>
+<li>改进了对Windows和Linux的支持</li>
+</ul>
+
+<h2>配置</h2>
+
+<ul>
+<li>改进与Grunt的兼容性</li>
+<li>一切都有更好的配置性</li>
+<li>任务</li>
+<li>锚点</li>
+<li>项目结构</li>
+<li>生成器</li>
+<li>依赖/Usemin块</li>
+<li>几乎所有的任务上缴到grunt-contrib</li>
+<li>作为重写的一个好处，甚至连改动Yeoman自己现在也更直接了</li>
+</ul>
+
+<h2>生成器</h2>
+
+<ul>
+<li>为脚手架应用提供新的，简化的API</li>
+<li>致力于服务Grunt的init</li>
+<li>再过不久，所有生成器都将使用Bower管理依赖</li>
+<li>将会被轻易的通过NPM获取</li>
+<li>配合后端改进的锚点</li>
+<li>由社区里经常使用它们的开发者驱动</li>
+<li>再过不久，将为前端和后端提供脚手架</li>
+</ul>
+
+<h2>Bower</h2>
+
+<ul>
+<li>现在由Yeoman的贡献者驱动</li>
+<li>若干为了一般使用稳定性的修复</li>
+<li>通过你的bowerrc文件搜索和发布到不懂的端点</li>
+<li>改进Bower和RequireJS的连接。修改配置作为一个对象，不再重复条目</li>
+<li>使用 install 用户名/仓库名 安装 </li>
+<li>自动补全</li>
+<li>改进列表时间</li>
+<li>改进错误处理和错误消息</li>
+</ul>
+
+<hr>
+
+<p>如果你有兴趣<a href="https://github.com/yeoman/yeoman/wiki/Migrate-from-0.9.6-to-1.0">迁移你的0.9版本的应用到1.0版本，请查看这个迁移指南</a>.</p>
+
+      
+    </article>
+  </div>
+<!--
+  <div class="forkit-curtain">
+    <div class="close-button"></div>
+      <h2>Yeoman Repositories</h2>
+      <section class="repo">
+        <h2>Yeoman</h2>
+        <a href="https://github.com/yeoman/yeoman">
+          <img src="assets/img/yeoman-003.png" class="character">
+        </a>
+        <p>Your new favorite web application stack and development tool</p>
+      </section>
+      <section class="repo">
+        <h2>Yeoman.io</h2>
+        <a href="https://github.com/yeoman/yeoman.io">
+          <img src="assets/img/yeoman-007.png" class="character">
+        </a>
+        <p>Yeoman website</p>
+      </section>
+      <section class="repo">
+        <h2>Generators</h2>
+        <a href="https://github.com/yeoman/generator">
+          <img src="assets/img/yeoman-005.png" class="character">
+        </a>
+        <p>Rails-like generator system for Yeoman that provide scaffolding for your apps</p>
+      </section>
+</div>
+  <a class="forkit" data-text="Fork me on GitHub" data-text-detached="Drag down >" href="https://github.com/yeoman">
+    <img class="forkit-img" src="https://a248.e.akamai.net/camo.github.com/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub">
+  </a>
+-->
+  <script>
+    // $script.js - github.com/ded/script.js
+    (function(a,b,c){typeof c["module"]!="undefined"&&c.module.exports?c.module.exports=b():typeof c["define"]!="undefined"&&c["define"]=="function"&&c.define.amd?define(a,b):c[a]=b()})("$script",function(){function p(a,b){for(var c=0,d=a.length;c<d;++c)if(!b(a[c]))return j;return 1}function q(a,b){p(a,function(a){return!b(a)})}function r(a,b,i){function o(a){return a.call?a():d[a]}function t(){if(!--n){d[m]=1,l&&l();for(var a in f)p(a.split("|"),o)&&!q(f[a],o)&&(f[a]=[])}}a=a[k]?a:[a];var j=b&&b.call,l=j?b:i,m=j?a.join(""):b,n=a.length;return setTimeout(function(){q(a,function(a){if(h[a])return m&&(e[m]=1),h[a]==2&&t();h[a]=1,m&&(e[m]=1),s(!c.test(a)&&g?g+a+".js":a,t)})},0),r}function s(c,d){var e=a.createElement("script"),f=j;e.onload=e.onerror=e[o]=function(){if(e[m]&&!/^c|loade/.test(e[m])||f)return;e.onload=e[o]=null,f=1,h[c]=2,d()},e.async=1,e.src=c,b.insertBefore(e,b.firstChild)}var a=document,b=a.getElementsByTagName("head")[0],c=/^https?:\/\//,d={},e={},f={},g,h={},i="string",j=!1,k="push",l="DOMContentLoaded",m="readyState",n="addEventListener",o="onreadystatechange";return!a[m]&&a[n]&&(a[n](l,function t(){a.removeEventListener(l,t,j),a[m]="complete"},j),a[m]="loading"),r.get=s,r.order=function(a,b,c){(function d(e){e=a.shift(),a.length?r(e,d):r(e,b,c)})()},r.path=function(a){g=a},r.ready=function(a,b,c){a=a[k]?a:[a];var e=[];return!q(a,function(a){d[a]||e[k](a)})&&p(a,function(a){return d[a]})?b():!function(a){f[a]=f[a]||[],f[a][k](b),c&&c(e)}(a.join("|")),r},r},this)
+    var _gaq=[
+      ['_setAccount','UA-44616116-1'],
+      ['_setDomainName', '.yeomanjs.org'],
+      ['_trackPageview'],['_trackPageLoadTime']
+    ];
+    $script('http://www.google-analytics.com/ga.js');
+    $script('https://apis.google.com/js/plusone.js');
+    $script("//platform.twitter.com/widgets.js");
+  </script>
+  <script src="assets/js/libs/forkit.js"></script>
+
+</body>
+</html>

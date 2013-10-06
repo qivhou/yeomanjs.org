@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Yeoman - 为现代web应用而生的现代工作流</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Yeoman中文社区是由爱好者发起的Yeoman中文交流社区，关注web应用工作流工具Yeoman的应用推广。">
+  <meta name="keywords" content="yeoman, yeoman.js, web前端, workflow, 工作流, JavaScript, Node.js, Node, Bower, Grunt">
+  <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Lekton|Ubuntu+Mono:400,700" rel="stylesheet">
+  <link href="assets/css/normalize.css" rel="stylesheet">
+  <link href="assets/css/yeoman.css" rel="stylesheet">
+  <link href="assets/css/prettify.css" rel="stylesheet">
+  <link href="assets/css/forkit.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="assets/js/libs/prettify.js"></script>
+  <script src="assets/js/libs/jquery.timeago.js"></script>
+  <script src="assets/js/libs/list.js"></script>
+  <script src="assets/js/libs/lodash.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</head>
+
+<body class="">
+    <nav>
+    <header><a href="/index.html"><img src="http://yeoman.io/assets/img/yeoman-logo.png"></a></header>
+    <ul>
+      <li class="nav-divider"><a href="/index.html"><img src="http://yeoman.io/assets/img/icon-home.png">主页</a></li>
+      <li class="nav-divider"><a href="/whyyeoman.html"><img src="http://yeoman.io/assets/img/icon-why-yeoman.png">为什么选择Yeoman?</a></li>
+      <li><a href="/gettingstarted.html"><img src="http://yeoman.io/assets/img/icon-getting-started.png">新手上路(1.0)</a></li>
+      <li class="nav-sub"><a href="/about.html">关于Yeoman</a></li>
+      <li class="nav-sub"><a href="/roadmap.html">路线图</a></li>
+      <li class="nav-sub"><a href="/deployment.html">部署</a></li>
+      <li class="nav-sub"><a href="/support.html">支持</a></li>
+      <li class="nav-divider nav-sub"><a href="/packagemanager.html">包管理器</a></li>
+      <li><a href="/generators.html">生成器</a></li>
+      <li class="nav-sub"><a href="/community-generators.html">社区贡献的生成器</a></li>
+      <li class="nav-sub"><a href="/generators.html#writing-your-first-generator">编写你自己的生成器</a></li>
+      <li class="nav-sub"><a href="/generators.html#get-help">得到帮助</a></li>
+      <li class="nav-sub"><a href="/generators.html#reference-materials">参考资料</a></li>
+      <li class="nav-sub"><a href="/generators.html#snippets">代码片段</a></li>
+      <li class="nav-divider nav-sub"><a href="/generators.html#frequently-asked-questions">FAQ</a></li>
+      <li><a href="https://github.com/yeoman/yeoman/wiki"><img src="http://yeoman.io/assets/img/icon-documentation.png">文档</a></li>
+      <li class="nav-sub"><a href="/road.html">通向1.0版本之路</a></li>
+      <li class="nav-sub nav-divider"><a href="/migrate.html">从0.9版本迁移</a></li>
+      <li><a href="/index.html">Yeoman中文社区</a></li>
+      <li class="nav-sub"><a href="https://github.com/qivhou/yeoman-cn/issues">翻译问题</a></li>
+      <li class="nav-sub"><a href="https://github.com/qivhou/yeoman-cn/">参与中文社区翻译</a></li>
+      <li class="nav-sub nav-divider"><a href="https://github.com/qivhou/yeomanjs.org/">参与中文社区网站建设</a></li>
+      <li><a href="/faq.html"><img src="http://yeoman.io/assets/img/icon-faqs.png">FAQ</a></li>
+      <li class"nav-divider"><a href="https://plus.google.com/101063139999404044459/posts"><img src="http://yeoman.io/assets/img/icon-google-plus.png">Google+</a></li>
+      <li class="nav-divider"><a href="http://twitter.com/yeoman"><img src="http://yeoman.io/assets/img/icon-twitter.png">Twitter</a></li>
+      <li><a href="http://github.com/yeoman/yeoman"><img src="http://yeoman.io/assets/img/icon-github.png">GitHub</a></li>
+      <li><a href="https://github.com/yeoman/yeoman/blob/master/contributing.md"><img src="http://yeoman.io/assets/img/icon-contributing.png">参与贡献</a></li>
+    </ul>
+  </nav>
+
+  <div id="content">
+    <article>
+      
+        <h1>Yeoman新手上路</h1>
+
+<p>Yeoman工作流致力于提高你在构建web应用时的生成力和舒适度，由三种核心工具构成,这些工具是：</p>
+
+<ul>
+<li><a href="https://github.com/yeoman/yo">yo</a> - 来自Yeoman的脚手架工具</li>
+<li><a href="http://bower.io">bower</a> - 包管理工具</li>
+<li><a href="http://gruntjs.com">grunt</a> - 构建工具</li>
+</ul>
+
+<p>这些项目中的每一个都是由各自社区独立维护的，但是可以很好的一起工作，作为我们指定的工作流的一份子来保持你的效率。让我们看看这些工具都能干什么。</p>
+
+<p class="toolset">
+  <img class="full" src="https://raw.github.com/yeoman/yeoman.io/gh-pages/media/workflow.jpg">
+</p>
+
+<h2>yo</h2>
+
+<p>Yo由Yeoman项目维护并且利用脚手架模板我们称之为生成器来提供web应用脚手架。通常你可以通过npm安装yo和任何你认为你有可能用到的生成器。</p>
+
+<h3>安装yo和一些生成器</h3>
+
+<p>首先，你将需要安装<code>yo</code>和其他一些必需的工具：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">npm install -g yo
+</code></pre></div>
+<p>如果你正在使用npm 1.2.10 或者更高版本，这个将会自动替你安装<code>grunt</code>和<code>bower</code>。如果你在使用一个比这个老一点的npm版本，你将需要手动安装它们：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"># For npm versions &lt; 1.2.10.
+npm install -g grunt-cli bower
+</code></pre></div>
+<p><em>如果之前你已经在全局范围安装了Grunt，你将需要先卸载它:</em> <code>npm uninstall -g grunt</code></p>
+
+<p><em>在Windows平台，我们建议你受用一个增强版的命令行工具比如 Console2 或者 PowerShell来提升你的体验。</em></p>
+
+<h3>基础脚手架</h3>
+
+<p>为了搭建一个web应用脚手架，你将需要安装<code>generator-webapp</code>生成器：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">npm install -g generator-webapp
+</code></pre></div>
+<p>这是默认的web应用生成器，它将搭建一个项目脚手架包括<a href="http://html5boilerplate.com">HTML5 Boilerplate</a>，<a href="http://jquery.com">jQuery</a>，<a href="http://modernizr.com">Modernizr</a>，还有<a href="http://twbs.github.io/bootstrap">Bootstrap</a>。在互动的提示中你将有选择去不要包含它们中的一些。</p>
+
+<p>现在生成器已经安装好了，为你的项目创建一个新的目录，然后运行：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">yo webapp
+</code></pre></div>
+<p>每一个由yo创建的项目也将会pull相关的Grunt任务，这些任务是社区认为对你的工作流是需要的或者有用的。</p>
+
+<p>对于web应用来说，这个webapp生成器被认为是最简单可行的一个开始。我们也提供了一些框架生成器，它们可以被用来搭建项目脚手架以及之后的视图，模型，控制器等等。</p>
+
+<h4>样例：搭建一个AngularJS的应用脚手架</h4>
+
+<p>一如往常，在使用一个新的生成器之前，你必须要先从npm安装它:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">npm install -g generator-angular
+</code></pre></div>
+<p>安装之后，为你的应用创建一个新的目录，然后运行：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">yo angular
+</code></pre></div>
+<p>许多生成器允许你通过在初始化命令使用一些标记来自定义你的应用。用<code>generator-angular</code>做一个例子，你可以输入：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">yo angular --minsafe
+</code></pre></div>
+<p>在这里，我们首先生成一个基础的web应用生成文件结构，然后在它上面写一系列的样板应用。这个包括样板指令和控制器还有Karma单元测试脚手架。</p>
+
+<h5>搭建你的Angular应用零件的脚手架</h5>
+
+<p>一些生成器也可以被用来进一步搭建你的应用零件 - 我们称这些为子生成器。</p>
+
+<p>在AngularJS框架中，例如，你的应用由一系列的零件组成包括控制器，指令和过滤器。实际上你可以搭建任何零件的脚手架(甚至更多)，在你的开发工作流中如下所示：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">yo angular:controller myController
+yo angular:directive myDirective
+yo angular:filter myFilter
+yo angular:service myService
+</code></pre></div>
+<p>每一个框架生成器有详尽的文档指出它支持什么样的字生成器。</p>
+
+<h3>创建你自己的生成器</h3>
+
+<p>See <a href="https://github.com/yeoman/yeoman/wiki/Generators">Generators</a>.</p>
+
+<h2>Bower</h2>
+
+<p>Bower是一个web项目的包管理器，它允许你很容易的管理你项目的依赖。这包括诸如Javascript，images和CSS资源。它是由Twitter和它的开源社区维护。</p>
+
+<p>用Bower管理包可以使用如下的命令来完成：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"># Search for a dependency in the Bower registry.
+bower search &lt;dep&gt;
+
+# Install one or more dependencies.
+bower install &lt;dep&gt;..&lt;depN&gt;
+
+# List out the dependencies you have installed for a project.
+bower list
+
+# Update a dependency to the latest version available.
+bower update &lt;dep&gt;
+</code></pre></div>
+<h3>在一个由yo的脚手架搭建的项目中使用Bower</h3>
+
+<p>创建一个带有一个Jquery插件依赖的基本web应用：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"># Scaffold a new application.
+yo webapp
+
+# Search Bower&#39;s registry for the plug-in we want.
+bower search jquery-pjax
+
+# Install it and save it to bower.json
+bower install jquery-pjax --save
+
+# If you&#39;re using RequireJS...
+grunt bower
+&gt; Injects your Bower dependencies into your RequireJS configuration.
+
+# If you&#39;re not using RequireJS...
+grunt bower-install
+&gt; Injects your dependencies into your index.html file.
+</code></pre></div>
+<p>就是这样简单。</p>
+
+<p><em>Y你选择的生成器可能并不包括grunt任务&quot;bower&quot; 和&quot;bower-install&quot;。你可以了解更多关于如何安装和使用它们 <a href="https://github.com/yeoman/grunt-bower-requirejs">grunt-bower-requirejs</a> 和 <a href="https://github.com/stephenplusplus/grunt-bower-install">grunt-bower-install</a>.</em></p>
+
+<h2>Grunt</h2>
+
+<p>对于JavaScript项目来说，Grunt是一个基于任务的命令行工具。它可以被用来构建项目，但是也暴露出了若干命令，你将乐意在你的工作流中使用这些命令。其中的许多命令利用了由Yeoman团队维护的Grunt任务。</p>
+
+<h3>Grunt 命令</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"># Preview an app you have generated (with Livereload).
+grunt server
+
+# Run the unit tests for an app.
+grunt test
+
+# Build an optimized, production-ready version of your app.
+grunt
+</code></pre></div>
+<p>这些命令可以与yo一块使用作为一个无缝开发工作流程：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">yo webapp
+grunt server
+grunt test
+grunt
+</code></pre></div>
+      
+    </article>
+  </div>
+<!--
+  <div class="forkit-curtain">
+    <div class="close-button"></div>
+      <h2>Yeoman Repositories</h2>
+      <section class="repo">
+        <h2>Yeoman</h2>
+        <a href="https://github.com/yeoman/yeoman">
+          <img src="assets/img/yeoman-003.png" class="character">
+        </a>
+        <p>Your new favorite web application stack and development tool</p>
+      </section>
+      <section class="repo">
+        <h2>Yeoman.io</h2>
+        <a href="https://github.com/yeoman/yeoman.io">
+          <img src="assets/img/yeoman-007.png" class="character">
+        </a>
+        <p>Yeoman website</p>
+      </section>
+      <section class="repo">
+        <h2>Generators</h2>
+        <a href="https://github.com/yeoman/generator">
+          <img src="assets/img/yeoman-005.png" class="character">
+        </a>
+        <p>Rails-like generator system for Yeoman that provide scaffolding for your apps</p>
+      </section>
+</div>
+  <a class="forkit" data-text="Fork me on GitHub" data-text-detached="Drag down >" href="https://github.com/yeoman">
+    <img class="forkit-img" src="https://a248.e.akamai.net/camo.github.com/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub">
+  </a>
+-->
+  <script>
+    // $script.js - github.com/ded/script.js
+    (function(a,b,c){typeof c["module"]!="undefined"&&c.module.exports?c.module.exports=b():typeof c["define"]!="undefined"&&c["define"]=="function"&&c.define.amd?define(a,b):c[a]=b()})("$script",function(){function p(a,b){for(var c=0,d=a.length;c<d;++c)if(!b(a[c]))return j;return 1}function q(a,b){p(a,function(a){return!b(a)})}function r(a,b,i){function o(a){return a.call?a():d[a]}function t(){if(!--n){d[m]=1,l&&l();for(var a in f)p(a.split("|"),o)&&!q(f[a],o)&&(f[a]=[])}}a=a[k]?a:[a];var j=b&&b.call,l=j?b:i,m=j?a.join(""):b,n=a.length;return setTimeout(function(){q(a,function(a){if(h[a])return m&&(e[m]=1),h[a]==2&&t();h[a]=1,m&&(e[m]=1),s(!c.test(a)&&g?g+a+".js":a,t)})},0),r}function s(c,d){var e=a.createElement("script"),f=j;e.onload=e.onerror=e[o]=function(){if(e[m]&&!/^c|loade/.test(e[m])||f)return;e.onload=e[o]=null,f=1,h[c]=2,d()},e.async=1,e.src=c,b.insertBefore(e,b.firstChild)}var a=document,b=a.getElementsByTagName("head")[0],c=/^https?:\/\//,d={},e={},f={},g,h={},i="string",j=!1,k="push",l="DOMContentLoaded",m="readyState",n="addEventListener",o="onreadystatechange";return!a[m]&&a[n]&&(a[n](l,function t(){a.removeEventListener(l,t,j),a[m]="complete"},j),a[m]="loading"),r.get=s,r.order=function(a,b,c){(function d(e){e=a.shift(),a.length?r(e,d):r(e,b,c)})()},r.path=function(a){g=a},r.ready=function(a,b,c){a=a[k]?a:[a];var e=[];return!q(a,function(a){d[a]||e[k](a)})&&p(a,function(a){return d[a]})?b():!function(a){f[a]=f[a]||[],f[a][k](b),c&&c(e)}(a.join("|")),r},r},this)
+    var _gaq=[
+      ['_setAccount','UA-44616116-1'],
+      ['_setDomainName', '.yeomanjs.org'],
+      ['_trackPageview'],['_trackPageLoadTime']
+    ];
+    $script('http://www.google-analytics.com/ga.js');
+    $script('https://apis.google.com/js/plusone.js');
+    $script("//platform.twitter.com/widgets.js");
+  </script>
+  <script src="assets/js/libs/forkit.js"></script>
+
+</body>
+</html>
