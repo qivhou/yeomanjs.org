@@ -56,7 +56,159 @@
   <div id="content">
     <article>
       
-        <p>Included file yeoman.wiki/wiki-cn/FAQ.md not found in _includes directory</p>
+        <h1>常见问题</h1>
+
+<h3>这个项目的目的目标是什么?</h3>
+
+<p>对Yeoman项目来说，短期的目标是提供给开发者一个经过改进的工作流工具，来使他们可以花更少的时间在流程上，集中更多的精力和时间来构建漂亮的web应用。最初的时候，我们希望把它打造的尽可能简单来与那些开发者们已经习惯使用的框架和工具协作。</p>
+
+<p>长期的目标是这个项目也可以协助开发者使用Web组件等最流行的技术来创建应用。</p>
+
+<h3>命令行接口是什么样的？</h3>
+
+<p>对开发者来说，一个命令行接口意味着使用文本命令和系统进行互动。在Linux或者OSX平台上，使用终端是司空见惯的，但是在Windows上我们使用命令行工具或者像<a href="http://www.cygwin.com">Cygwin</a>这样的三方的工具。</p>
+
+<h3>包管理器是什么？</h3>
+
+<p>包管理器通过命令行接口运行，是一个集安装，升级，配置和管理项目依赖的自动化过程工具。NPM就是一个包管理器的例子。</p>
+
+<h3>Yeoman与Grunt有什么区别？</h3>
+
+<p>Yeoman在一系列开源工具之上进行构建，提供自定义的工作流来帮助开发者更简单的完成常见的任务。<a href="http://gruntjs.com">Grunt.js</a>是这些工具中的一种，并且使我们的构建过程和任务插件架构更强大。</p>
+
+<p>在这个架构的顶端，我们有高度自定义的任务和概要文件以及可以很好与之配合工作的系统，同时也提供给开发者诸如生成器系统和整合Twitter的Bower包管理器的特性。Yeoman会关照你的Gruntfile的配置和安装来支持系统之外的Sass，CoffeeScript和Require.js/r.js。我们还提供了一些附加功能如wiring，改进的<code>serve</code>以及<code>init</code>，我们更愿意把自己看做是一个在Grunt之上的辅助项目。</p>
+
+<p>开发者在使用Yeoman的同时可以继续使用Grunt任务，跨工具任务的兼容性会保持在一个良好的水平。</p>
+
+<h3>Yeoman与Brunch或者BBB的工具有什么不同？</h3>
+
+<p>我们喜爱Brunch和Grunt-BBB这样的工具，并且认为它们给想要通过Backbone.js和Ember框架来搭建项目的开发者提供了一个很棒的解决方案。 因为我们已经把Rails生成器系统移植到了Node，有了Yeoman生成器系统，我们感到我们有一个有趣的机会来把应用搭建向一个新的方向发展 - 一个对所有开发者来说，可以更容易编写应用脚手架，支持多种测试框架，掌控他们自己的模板并且可以很容易的进行重用的方向。</p>
+
+<h3>在Bower上我怎样可以注册或者注销一个包？</h3>
+
+<p>可以使用<code>register</code>命令把包可以注册到Bower上. 例如 <code>bower register myawesomepackagename git://github.com/youraccount/yourrepo</code>. 我们推荐你在做这个之前先阅读以下Bower的<a href="https://github.com/twitter/bower">文档</a> ，确认你的代码库中包含了那些用来支持<code>install</code>的必要文件。</p>
+
+<h3>这个项目将为一些流行的框架提供生成器吗？</h3>
+
+<p>我们的目标是提供可以轻松创建丰富web应用的工具来方便开发者和社区。考虑到这一目标，我们将为我们的生成器系统提供一个很棒的API和文档，并且带有如何实现样本的例子，但是将依靠社区去创建和维护流行框架的生成器。这将使我们专注于将Yeoman打造的更好，而不是分心去维护大量的生成器。</p>
+
+<h3>Yeoman是在什么什么样的许可下发布的？</h3>
+
+<p>Yeoman是在<a href="http://opensource.org/licenses/bsd-license.php/">BSD</a>许可下发布的。</p>
+
+<h3>在通过Github提交一个问题前我应该做什么？</h3>
+
+<p>感谢你的关注并提交问题。为了使我们可以帮助到你，请确认你已经完成了以下步骤：</p>
+
+<ul>
+<li>确认你是在最新版本上</li>
+<li>阅读我们的文档和<a href="https://github.com/yeoman/yeoman/blob/master/readme.md">README</a>确认这个问题还没有被标记或者解决。</li>
+<li>使用检索功能确保这个bug之前没有被报告过</li>
+<li>尽可能多的包含有关这个bug的信息，包括你接收到的所有输出，你的操作系统以及版本。</li>
+<li>共享从 <code>echo $PATH $NODE_PATH</code> 和 <code>brew doctor</code> 得到的输出，因为它们可以帮助追查这个问题。</li>
+</ul>
+
+<p>问题可以通过我们在Github代码库上的<a href="https://github.com/yeoman/yeoman/issues">issue tab</a>进行提交。</p>
+
+<h3>Yeoman都利用了那些工具？</h3>
+
+<ul>
+<li><a href="https://github.com/cowboy/grunt">Grunt</a></li>
+<li><a href="http://bower.io">Twitter Bower</a></li>
+<li><a href="http://twbs.github.io/bootstrap">Bootstrap</a></li>
+<li><a href="https://github.com/h5bp/node-build-script">Node Build Script</a></li>
+<li><a href="http://html5boilerplate.com">HTML5 Boilerplate</a></li>
+<li><a href="http://compass-style.org/">Compass</a></li>
+<li><a href="https://github.com/Modernizr/Modernizr/">Modernizr</a></li>
+<li><a href="http://nodejs.org">Node</a></li>
+<li><a href="http://npmjs.org">NPM</a></li>
+<li><a href="http://socket.io">socket.io</a></li>
+<li><a href="http://coffeescript.org">CoffeeScript</a></li>
+<li><a href="http://visionmedia.github.com/mocha/">Mocha</a></li>
+<li><a href="http://pivotal.github.com/jasmine/">Jasmine</a></li>
+<li><a href="http://phantomjs.org/">PhantomJS</a></li>
+<li><a href="http://requirejs.org/">Require.js</a></li>
+<li><a href="https://github.com/jrburke/require-hm">RequireHM</a></li>
+<li><a href="http://optipng.sourceforge.net/">optipng</a></li>
+<li><a href="http://jpegclub.org/jpegtran/">JPEGTran</a></li>
+<li><a href="https://npmjs.org/package/connect">connect</a></li>
+<li><a href="https://npmjs.org/package/html-minifier">html-minifier</a></li>
+<li><a href="https://github.com/GoalSmashers/clean-css">clean-css</a></li>
+<li><a href="https://github.com/vwall/compass-twitter-bootstrap/">compass_bootstrap</a></li>
+</ul>
+
+<h3>显然NPM已经安装了yeoman但是<code>yeoman</code>依然给我返回&quot;command not found&quot;.</h3>
+
+<p>很可能你的PATH中并没有包括全局的NPM模块。更好的文档将会推出，但是在那之前请先阅读<a href="https://github.com/yeoman/yeoman/issues/466#issuecomment-8602733">这条评论</a> 还有 <a href="https://github.com/yeoman/yeoman/issues/430#issuecomment-8597663">这条</a>.</p>
+
+<p>当你通过Homebrew安装Node的时候，这个是经常发生的，因为它吧Node模块放在了一个不再你PATH中的目录。</p>
+
+<p>来自Homebrew的输出:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">==&gt; Caveats
+Homebrew installed npm.
+We recommend prepending the following path to your PATH environment
+variable to have npm-installed binaries picked up:
+  /usr/local/share/npm/bin
+</code></pre></div>
+<p>对于高级用户来说，快速的修复方法是把下面的内容放在你的 .bashrc/.zshrc 文件中：
+<code>export PATH=/usr/local/share/npm/bin:$PATH</code></p>
+
+<p>对于新手来说，<code>brew uninstall node</code> 然后从Nodejs的<a href="http://nodejs.org">网站</a>下载并安装。</p>
+
+<h3>我得到了 <code>EMFILE, too many open files</code></h3>
+
+<p>EMFILE意思是你已经达到了操作系统同时打开文件的上限。我们没有太多可以做的，然而你可以自己扩大这个限制。</p>
+
+<p>添加 <code>ulimit -n [number of files]</code> 到你的 .bashrc/.zshrc 文件来增加这个软限制。</p>
+
+<p>如果过你达到了操作系统的硬限制，你可以遵照这个<a href="http://stackoverflow.com/a/34645/64949">StackOverflow的回答</a>来扩大它。</p>
+
+<h3>我应该用什么来为我的应用写文档</h3>
+
+<p>查看<a href="https://github.com/yeoman/yeoman/issues/152#issuecomment-7081670">#152 ticket for recommended solutions for documentation generation</a>的细节。</p>
+
+<h3>为什么Yeoman要求一个CLA？</h3>
+
+<p>它使IP保持清洁有助于防止围绕谁拥有什么软件展开的轻浮诉讼。基本上这是我们所有人无论如何要避免的一件事。综上所述，CLA声称当你贡献修复或者文档的时候，你拥有你将提交的代码以及相应的Google许可给其他人的代码。（在这种情况下，使它在BSD许可下是有效的）</p>
+
+<p>所以，是的，这个一个额外的障碍，但是我们却无法在这儿避免它。这是一个Google开源的项目和相应的规则。</p>
+
+<p>对那些还有所担心的人，这儿有一些其他的项目也要求相似的协议，jQuery, Firefox, Sizzle, Dojo, Plone, Fedora, Cordova/Phonegap, Apache, Flex.</p>
+
+<p>还有更多:
+* http://incubator.apache.org/ip-clearance/index.html
+* http://wiki.civiccommons.org/Contributor_Agreements</p>
+
+<h3>我怎样在Yeoman中使用Compass sprites和 <code>image_url</code> 助手？</h3>
+
+<p>遵照<a href="https://gist.github.com/passy/5270050">这个gist</a>中提供的向导.</p>
+
+<h3>我怎样能禁用Insight或者更新通知？</h3>
+
+<p>你可以使用一条命令行标志来禁用它们。例如： <code>yo webapp --no-insight</code></p>
+
+<p>Insight: <code>--no-insight</code><br>
+更新通知: <code>--no-update-notifier</code></p>
+
+<p>你也可以添加带有任意值的<code>yeoman_test</code>作为一个系统变量，来永久停用这两项功能。</p>
+
+<h3>我可以在一个自定义的Web服务器中使用livereloading吗？</h3>
+
+<p>必须的！你可以从你的Gruntfile中移除<code>connect</code>任务并且手动插入以下的代码片段到你的HTML中：</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="c">&lt;!-- livereload script --&gt;</span>
+<span class="nt">&lt;script&gt;</span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;script src=&quot;http://&#39;</span>
+ <span class="o">+</span> <span class="p">(</span><span class="nx">location</span><span class="p">.</span><span class="nx">host</span> <span class="o">||</span> <span class="s1">&#39;localhost&#39;</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+ <span class="o">+</span> <span class="s1">&#39;:35729/livereload.js?snipver=1&quot; type=&quot;text/javascript&quot;&gt;&lt;\/script&gt;&#39;</span><span class="p">)</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>
+<p>在完成后，像你平常一样简单的运行 <code>grunt serve</code>然后享受页面自动刷新。</p>
+
+<h3>在复制了通过Yeoman生成的web应用之后我应该做什么？</h3>
+
+<p>Yeoman为你创建了一个<code>.gitignore</code>文件。这个文件添加了 <code>node_modules</code> 还有 <code>bower_components</code> 文件夹到你的黑名单中。所以，运行 <code>grunt serve</code> 并且下载列在 <code>bower.json</code>文件中的Javascript依赖 ，你需要运行下面的命令：</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">npm install &amp; bower install
+</code></pre></div>
+<p>并且检查是否这些文件夹被正确的创建了。</p>
 
 <p><img src="assets/img/yeoman-009.png" class="character"/></p>
 

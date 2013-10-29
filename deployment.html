@@ -88,6 +88,10 @@ git subtree push --prefix dist origin gh-pages
 <li>你可能会得到一个像这样的错误 <code>Updates were rejected because the tip of your current branch is behind</code>。你可以通过<a href="http://stackoverflow.com/a/13403588/64949">强制推送到远程</a> 解决它（但是请小心一点，它将会销毁那儿已经存在的所有文件）。</li>
 </ul>
 
+<h3>替代方式</h3>
+
+<p>如果你倾向于不把dist提交到master分支，你可以使用<a href="https://github.com/X1011/git-directory-deploy">git-directory-deploy</a>脚本从工作目录直接部署文件。</p>
+
 <h3>额外的资料</h3>
 
 <p><a href="https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt">Git Subtree 文档</a></p>

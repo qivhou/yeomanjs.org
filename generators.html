@@ -362,7 +362,7 @@ Would you like to <span class="nb">enable </span>this option? <span class="o">(<
 
 <ul>
 <li><code>grunt build</code> - 创建一个来自每篇博文关键字的&quot;wordmap&quot;</li>
-<li><code>grunt server</code> - 监控Markdown的更改，重新构建这个项目</li>
+<li><code>grunt serve</code> - 监控Markdown的更改，重新构建这个项目</li>
 </ul></li>
 <li>Bower将获取两个运行时依赖：
 
@@ -509,12 +509,12 @@ Done, without errors.
 
 <p>如果你好奇想看到更多，那就看吧！</p>
 
-<p>刚才那是构建任务,它也会从另一个grunt任务被运行；<code>server</code>。试试看这个：</p>
-<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nv">$ </span>grunt server
+<p>刚才那是构建任务,它也会从另一个grunt任务被运行；<code>serve</code>。试试看这个：</p>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nv">$ </span>grunt serve
 Running <span class="s2">&quot;build&quot;</span> task
 
 Running <span class="s2">&quot;connect:livereload&quot;</span> <span class="o">(</span>connect<span class="o">)</span> task
-Starting connect web server on localhost:9000.
+Starting connect web serve on localhost:9000.
 
 Running <span class="s2">&quot;open:server&quot;</span> <span class="o">(</span>open<span class="o">)</span> task
 
@@ -595,7 +595,7 @@ You called the post subgenerator with the argument hey, buddy.
 
 <p><em>因为我们生成的文件内容非常少，它只有一个基于博文标题的<code># 标题</code>，我选择移除<code>templates</code>目录，我把它写在了这个 <code>PostGenerator.prototype.files</code> 函数内实现。对于规模更大的应用，结构良好的分割是必不可少的。</em></p>
 
-<p>我的天啊，我们有了一个blog生成器！试着创建编写一些博文。试着玩玩 <code>grunt server</code> 和 <code>grunt build</code>，保持 <code>index.html</code> 在打开状态然后看看结果。一切都按预期那样吗？</p>
+<p>我的天啊，我们有了一个blog生成器！试着创建编写一些博文。试着玩玩 <code>grunt serve</code> 和 <code>grunt build</code>，保持 <code>index.html</code> 在打开状态然后看看结果。一切都按预期那样吗？</p>
 
 <h2 id="writing-your-next-generator">编写你的下一个生成器</h2>
 
