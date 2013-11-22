@@ -3,5 +3,5 @@
 	url = git://github.com/qivhou/yeoman-cn.git
 [submodule "_site"]
 	path = _site
-	url = git://github.com/qivhou/yeoman-cn.git
+	url = git://github.com/qivhou/yeomanjs.org.git
 	branch = gh-pages
