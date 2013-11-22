@@ -1,0 +1,38 @@
+{
+  "name": "yeomanjs.org",
+  "version": "0.0.1",
+  "description": "the source code for building yeomanjs.org website",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qivhou/yeomanjs.org"
+  },
+  "keywords": [
+    "yeoman",
+    "translation",
+    "Chinese",
+    "yeomanjs"
+  ],
+  "author": "qivhou",
+  "license": "BSD",
+  "gitHead": "d9400af229945c300f8b1e808795373362511b90",
+  "readmeFilename": "readme.md",
+  "bugs": {
+    "url": "https://github.com/qivhou/yeomanjs.org/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-connect": "~0.5.0"
+  }
+}
