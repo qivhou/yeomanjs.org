@@ -2,35 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Yeoman - 为现代web应用而生的现代工作流</title>
+  
+  <title>Yeoman - 为现代web应用而生的现代工作流 | 部署</title>
+  
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Yeoman中文社区是由爱好者发起的Yeoman中文交流社区，关注web应用工作流工具Yeoman的应用推广。">
-  <meta name="keywords" content="yeoman, yeoman.js, web前端, workflow, 工作流, JavaScript, Node.js, Node, Bower, Grunt">
+  
+  <meta name="keywords" content="yeoman, yeoman.js, 工作流, workflow, 部署应用 常见错误 替代方式 额外的资料">
+  
+  
+  <meta name="description" content="使用Yeoman部署你的应用，常见的问题以及额外的参考资料。">
+  
   <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Lekton|Ubuntu+Mono:400,700" rel="stylesheet">
-  <link href="assets/css/normalize.css" rel="stylesheet">
-  <link href="assets/css/yeoman.css" rel="stylesheet">
-  <link href="assets/css/prettify.css" rel="stylesheet">
-  <link href="assets/css/forkit.css" rel="stylesheet">
+  <link href="/assets/css/normalize.css" rel="stylesheet">
+  <link href="/assets/css/yeoman.css" rel="stylesheet">
+  <link href="/assets/css/prettify.css" rel="stylesheet">
+  <link href="/assets/css/forkit.css" rel="stylesheet">
+  
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-  <script src="assets/js/libs/prettify.js"></script>
-  <script src="assets/js/libs/jquery.timeago.js"></script>
-  <script src="assets/js/libs/list.js"></script>
-  <script src="assets/js/libs/lodash.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="/assets/js/libs/prettify.js"></script>
+  <script src="/assets/js/libs/jquery.timeago.js"></script>
+  <script src="/assets/js/libs/list.js"></script>
+  <script src="/assets/js/libs/lodash.min.js"></script>
+  <script src="/assets/js/script.js"></script>
 </head>
 
 <body class="">
     <nav>
-    <header><a href="/index.html"><img src="http://yeoman.io/assets/img/yeoman-logo.png"></a></header>
+    <header><a href="/index.html"><img src="/assets/img/yeoman-logo.png"></a></header>
     <ul>
-      <li class="nav-divider"><a href="/index.html"><img src="http://yeoman.io/assets/img/icon-home.png">主页</a></li>
-      <li class="nav-divider"><a href="/whyyeoman.html"><img src="http://yeoman.io/assets/img/icon-why-yeoman.png">为什么选择Yeoman?</a></li>
-      <li><a href="/gettingstarted.html"><img src="http://yeoman.io/assets/img/icon-getting-started.png">新手上路(1.0)</a></li>
+      <li class="nav-divider"><a href="/index.html"><img src="/assets/img/icon-home.png">主页</a></li>
+      <li class="nav-divider"><a href="/whyyeoman.html"><img src="/assets/img/icon-why-yeoman.png">为什么选择Yeoman?</a></li>
+      <li><a href="/gettingstarted.html"><img src="/assets/img/icon-getting-started.png">新手上路(1.0)</a></li>
       <li class="nav-sub"><a href="/about.html">关于Yeoman</a></li>
       <li class="nav-sub"><a href="/roadmap.html">路线图</a></li>
       <li class="nav-sub"><a href="/deployment.html">部署</a></li>
-      <li class="nav-sub"><a href="/support.html">支持</a></li>
+      <li class="nav-sub"><a href="/support.html">获得支持</a></li>
       <li class="nav-divider nav-sub"><a href="/packagemanager.html">包管理器</a></li>
+      <li><a href="/blog/index.html">Blog</a></li>
+      <li class="nav-sub"><a href="/articles.html">推荐文章</a></li>
+      <li class="nav-sub nav-divider"><a href="/docs/index.html">相关译文</a></li>
       <li><a href="/generators.html">生成器</a></li>
       <li class="nav-sub"><a href="/community-generators.html">社区贡献的生成器</a></li>
       <li class="nav-sub"><a href="/generators.html#writing-your-first-generator">编写你自己的生成器</a></li>
@@ -38,25 +48,26 @@
       <li class="nav-sub"><a href="/generators.html#reference-materials">参考资料</a></li>
       <li class="nav-sub"><a href="/generators.html#snippets">代码片段</a></li>
       <li class="nav-divider nav-sub"><a href="/generators.html#frequently-asked-questions">FAQ</a></li>
-      <li><a href="https://github.com/yeoman/yeoman/wiki"><img src="http://yeoman.io/assets/img/icon-documentation.png">文档</a></li>
+      <li><a href="https://github.com/qivhou/yeoman-cn/tree/master/wiki-cn"><img src="/assets/img/icon-documentation.png">文档</a></li>
       <li class="nav-sub"><a href="/road.html">通向1.0版本之路</a></li>
       <li class="nav-sub nav-divider"><a href="/migrate.html">从0.9版本迁移</a></li>
-      <li><a href="/index.html">Yeoman中文社区</a></li>
-      <li class="nav-sub"><a href="https://github.com/qivhou/yeoman-cn/issues">翻译问题</a></li>
+      <li><a href="/faq.html"><img src="/assets/img/icon-faqs.png">FAQ</a></li>
+      <li class"nav-divider"><a href="https://plus.google.com/101063139999404044459/posts"><img src="/assets/img/icon-google-plus.png">Google+</a></li>
+      <li class="nav-divider"><a href="http://twitter.com/yeoman"><img src="/assets/img/icon-twitter.png">Twitter</a></li>
+      <li><a href="http://github.com/yeoman/yeoman"><img src="/assets/img/icon-github.png">GitHub</a></li>
+      <li><a href="https://github.com/yeoman/yeoman/blob/master/contributing.md"><img src="/assets/img/icon-contributing.png">参与贡献</a></li>
+      <li class="nav-sub"><a href="https://github.com/qivhou/yeoman-cn/issues">内容翻译问题</a></li>
       <li class="nav-sub"><a href="https://github.com/qivhou/yeoman-cn/">参与中文社区翻译</a></li>
-      <li class="nav-sub nav-divider"><a href="https://github.com/qivhou/yeomanjs.org/">参与中文社区网站建设</a></li>
-      <li><a href="/faq.html"><img src="http://yeoman.io/assets/img/icon-faqs.png">FAQ</a></li>
-      <li class"nav-divider"><a href="https://plus.google.com/101063139999404044459/posts"><img src="http://yeoman.io/assets/img/icon-google-plus.png">Google+</a></li>
-      <li class="nav-divider"><a href="http://twitter.com/yeoman"><img src="http://yeoman.io/assets/img/icon-twitter.png">Twitter</a></li>
-      <li><a href="http://github.com/yeoman/yeoman"><img src="http://yeoman.io/assets/img/icon-github.png">GitHub</a></li>
-      <li><a href="https://github.com/yeoman/yeoman/blob/master/contributing.md"><img src="http://yeoman.io/assets/img/icon-contributing.png">参与贡献</a></li>
+      <li class="nav-sub"><a href="https://github.com/qivhou/yeomanjs.org/">参与中文社区网站建设</a></li>
     </ul>
   </nav>
 
   <div id="content">
     <article>
       
-        <h2>部署你的应用</h2>
+        <h1>部署</h1>
+
+<h2>部署你的应用</h2>
 
 <p>当你运行 <code>grunt build</code> 后，它会在 <code>dist</code> 目录中为你的应用生成一个完整的，优化过的可部署版本。</p>
 
