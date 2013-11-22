@@ -1,3 +1,7 @@
-[submodule "_includes\\yeoman.wiki"]
-	path = _includes\\yeoman.wiki
-	url = https://github.com/qivhou/yeoman-cn.git
+[submodule "_includes/yeoman.wiki"]
+	path = _includes/yeoman.wiki
+	url = git://github.com/qivhou/yeoman-cn.git
+[submodule "_site"]
+	path = _site
+	url = git://github.com/qivhou/yeoman-cn.git
+	branch = gh-pages
