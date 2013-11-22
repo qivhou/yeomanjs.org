@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body class="{{page.class}}">
+{% include sidebar.html %}
+<div id="content">
+    {% if page.title %}
+        <h1 class="banner">
+            <span>{{ page.title }}</span>
+        </h1>
+    {% endif %}
+    <article>
+      <header>
+        <div class="strikethrough strikethrough-image">
+          <h1><img src="../assets/img/yeoman-header.png" alt="Yeoman"></h1>
+        </div>
+      </header>
+      <section>
+        {% include social.html %}
+        <div class="post">
+            <article>
+                {% if page.markdown == 1 %}
+                {{ content | markdownify }}
+                {% else %}
+                {{ content }}
+                {% endif %}
+            </article>
+        </div>
+      </section>
+      {% include disqus.html %}
+    </article>
+</div>
+{% include foot.html %}
+</body>
+</html>
+

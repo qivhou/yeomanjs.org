@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body class="{{page.class}}">
+{% include sidebar-blog.html %}
+<div id="content">
+    <h1 class="banner">
+        <span>{{ page.title }}</span>
+    </h1>
+    <article>
+        <section>
+            {% if page.date %}
+                <p class="meta">{{ page.date | date_to_string }}</p>
+            {% endif %}
+            {% include social.html %}
+            <div class="post">
+                <article>
+                    {% if page.markdown == 1 %}
+                    {{ content | markdownify }}
+                    {% else %}
+                    {{ content }}
+                    {% endif %}
+                </article>
+            </div>
+        </section>
+        {% include disqus.html %}
+    </article>
+</div>
+{% include foot.html %}
+</body>
+</html>
